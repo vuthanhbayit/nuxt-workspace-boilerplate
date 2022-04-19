@@ -1,1 +1,1 @@
-export declare const sleep: (timeout: number) => Promise<unknown>;
+export declare const sleep: (timeout: number) => Promise<unknown>

@@ -1,5 +1,5 @@
 <template>
-  <input type="text" class="t-input">
+  <input type="text" class="t-input" />
 </template>
 
 <script lang="ts">
@@ -11,9 +11,9 @@ export default defineComponent({
   props: {
     size: {
       type: String as PropType<ButtonSize>,
-      default: 'md'
-    }
-  }
+      default: 'md',
+    },
+  },
 })
 </script>
 
@@ -22,4 +22,3 @@ export default defineComponent({
   @apply p-4 bg-gray-200;
 }
 </style>
-

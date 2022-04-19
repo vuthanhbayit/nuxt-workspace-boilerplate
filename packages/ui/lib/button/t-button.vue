@@ -5,15 +5,15 @@
 </template>
 
 <script>
-import { defineComponent } from "@vue/composition-api";
+import { defineComponent } from '@vue/composition-api'
 export default defineComponent({
   props: {
     size: {
       type: String,
-      default: "md"
-    }
-  }
-});
+      default: 'md',
+    },
+  },
+})
 </script>
 
 <style lang="postcss">
@@ -21,4 +21,3 @@ export default defineComponent({
   @apply text-white bg-primary-500;
 }
 </style>
-

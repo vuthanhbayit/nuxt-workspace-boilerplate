@@ -1,13 +1,11 @@
 <template>
-<header>header</header>
+  <header>header</header>
 </template>
 
 <script>
 export default {
-  name: "TheHeader"
+  name: 'TheHeader',
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

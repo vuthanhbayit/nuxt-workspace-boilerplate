@@ -13,9 +13,9 @@ export default defineComponent({
   props: {
     size: {
       type: String as PropType<ButtonSize>,
-      default: 'md'
-    }
-  }
+      default: 'md',
+    },
+  },
 })
 </script>
 
@@ -24,4 +24,3 @@ export default defineComponent({
   @apply text-white bg-primary-500;
 }
 </style>
-

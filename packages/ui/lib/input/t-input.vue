@@ -1,17 +1,17 @@
 <template>
-  <input type="text" class="t-input">
+  <input type="text" class="t-input" />
 </template>
 
 <script>
-import { defineComponent } from "@vue/composition-api";
+import { defineComponent } from '@vue/composition-api'
 export default defineComponent({
   props: {
     size: {
       type: String,
-      default: "md"
-    }
-  }
-});
+      default: 'md',
+    },
+  },
+})
 </script>
 
 <style lang="postcss">
@@ -19,4 +19,3 @@ export default defineComponent({
   @apply p-4 bg-gray-200;
 }
 </style>
-
