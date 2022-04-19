@@ -9,7 +9,8 @@
     "dev:desktop": "nuxt --config-file workspaces/desktop/nuxt.config.js",
     "dev:mobile": "nuxt --config-file workspaces/mobile/nuxt.config.js",
     "build:mobile": "nuxt build --config-file workspaces/mobile/nuxt.config.js",
-    "build": "unbuild"
+    "build:desktop": "nuxt build --config-file workspaces/desktop/nuxt.config.js",
+    "build": "yarn build:mobile && yarn build:desktop"
   },
   "dependencies": {
     "@think/ui": "^0.0.0",
@@ -28,7 +29,6 @@
     "@nuxtjs/tailwindcss": "^4.2.1",
     "postcss": "^8.4.4",
     "ts-loader": "^8.3.0",
-    "unbuild": "^0.7.4",
     "webpack": "^4.46.0"
   }
 }

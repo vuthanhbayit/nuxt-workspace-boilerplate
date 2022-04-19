@@ -21,6 +21,7 @@
     "nicespace:dev:desktop": "yarn workspace nicespace dev:desktop",
     "nicespace:dev:mobile": "yarn workspace nicespace dev:mobile",
     "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
+    "build:packages": "lerna run build --scope=@think/*",
     "test": "vitest"
   },
   "devDependencies": {

@@ -20,6 +20,13 @@
 > yarn dev:mobile  
 ```
 
+### Build packages
+
+```
+> cd nicespace-fe
+> yarn build:packages
+```
+
 ### Build ui
 
 ```

@@ -71,6 +71,7 @@ tsconfig-paths.json
 
 # Nuxt generate
 dist
+lib
 
 # vuepress build output
 .vuepress/dist
