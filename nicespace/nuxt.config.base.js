@@ -24,6 +24,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxtjs/composition-api/module',
+    '@think/ui/nuxt',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
@@ -34,6 +35,14 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ['@think/ui', '@think/utils'],
+    postcss: {
+      plugins: {
+        'postcss-import': true,
+        'postcss-nesting': true,
+        'postcss-nested': true,
+        'postcss-custom-properties': false,
+      },
+    },
   },
 
   tailwindcss: {

@@ -1,3 +1,3 @@
 import TTag from './t-tag.vue'
 
-export { TTag }
+export default TTag
