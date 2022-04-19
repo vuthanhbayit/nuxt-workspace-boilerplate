@@ -9,15 +9,17 @@
 </template>
 
 <script lang="ts">
-import {onMounted, defineComponent} from "@nuxtjs/composition-api";
-import {sleep} from "@think/utils";
-import TBase from "@base/t-base.vue";
-import TheHeader from "@root/components/the-header.vue";
-import {useValue} from "@@/composables";
+import { onMounted, defineComponent } from '@nuxtjs/composition-api'
+import { sleep } from '@think/utils'
+import TBase from '@base/t-base.vue'
+import TheHeader from '@root/components/the-header.vue'
+import { useValue } from '@root/composables'
 
 export default defineComponent({
   name: 'IndexPage',
-  components: {TheHeader, TBase},
+
+  components: { TheHeader, TBase },
+
   setup() {
     onMounted(async () => {
       await sleep(1000)
@@ -28,6 +30,6 @@ export default defineComponent({
       console.log('1000')
       useValue()
     })
-  }
+  },
 })
 </script>

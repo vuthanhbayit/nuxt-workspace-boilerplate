@@ -8,20 +8,20 @@
 </template>
 
 <script lang="ts">
-import {onMounted, defineComponent} from "@nuxtjs/composition-api";
-import {sleep} from "@think/utils";
-import TheHeader from "@/components/the-header.vue";
-import {useValue} from "@root/composables";
+import { onMounted, defineComponent } from '@nuxtjs/composition-api'
+import { sleep } from '@think/utils'
+import TheHeader from '@/components/the-header.vue'
+import { useValue } from '@root/composables'
 
 export default defineComponent({
   name: 'IndexPage',
-  components: {TheHeader},
+  components: { TheHeader },
   setup() {
     onMounted(() => {
       sleep(1000)
 
       useValue()
     })
-  }
+  },
 })
 </script>
