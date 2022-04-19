@@ -1,0 +1,41 @@
+{
+  "name": "@think/ui",
+  "version": "0.0.0",
+  "description": "A repo UI framework of ThinkGroup",
+  "author": "Vu Thanh Bay <vuthanhbayit@gmail.com>",
+  "license": "ISC",
+  "main": "lib/index.mjs",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src",
+    "playground"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "nuxt playground",
+    "build:playground": "nuxt build playground",
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/composition-api": "^0.32.0",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "@vue/composition-api": "^1.4.9",
+    "core-js": "^3.19.3",
+    "nuxt": "^2.15.8",
+    "postcss": "^8.4.4",
+    "unbuild": "^0.7.4",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0"
+  }
+}

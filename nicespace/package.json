@@ -1,0 +1,34 @@
+{
+  "name": "nicespace",
+  "version": "0.0.0",
+  "description": "Repo nicespace",
+  "author": "Vu Thanh Bay <vuthanhbayit@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "dev:desktop": "nuxt --config-file workspaces/desktop/nuxt.config.js",
+    "dev:mobile": "nuxt --config-file workspaces/mobile/nuxt.config.js",
+    "build:mobile": "nuxt build --config-file workspaces/mobile/nuxt.config.js",
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@think/ui": "^0.0.0",
+    "@think/utils": "^0.0.0",
+    "core-js": "^3.19.3",
+    "defu": "^6.0.0",
+    "nuxt": "^2.15.8",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/composition-api": "^0.32.0",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "postcss": "^8.4.4",
+    "ts-loader": "^8.3.0",
+    "unbuild": "^0.7.4",
+    "webpack": "^4.46.0"
+  }
+}
